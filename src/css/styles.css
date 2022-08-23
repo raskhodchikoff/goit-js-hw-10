@@ -72,3 +72,7 @@ p {
 .country-info__flag {
   width: 80px;
 }
+
+.country-info__value {
+  font-weight: 700;
+}

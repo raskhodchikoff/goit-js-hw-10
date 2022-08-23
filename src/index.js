@@ -43,8 +43,8 @@ function onInputCountry(e) {
       }
 
       if (countries.length === 1) {
-        const markup = countries.map(country => countryInfoMurkup(country));
-        refs.countryInfo.innerHTML = markup.join('');
+        const infoMarkup = countries.map(country => countryInfoMurkup(country));
+        refs.countryInfo.innerHTML = infoMarkup.join('');
         refs.countryList.innerHTML = '';
       }
     })
@@ -74,9 +74,9 @@ function countryInfoMurkup({ flags, name, capital, population, languages }) {
         <h2 class="country-info__name">${name.official}</h2>
       </div>
       <ul class="country-info__list">
-        <li><span style="font-weight:700;">Capital:</span> ${capital}</li>
-        <li><span style="font-weight:700;">Population:</span> ${population}</li>
-        <li><span style="font-weight:700;">Languages:</span> ${Object.values(
+        <li><span class="country-info__value">Capital:</span> ${capital}</li>
+        <li><span class="country-info__value">Population:</span> ${population}</li>
+        <li><span class="country-info__value">Languages:</span> ${Object.values(
           languages
         ).join(', ')}</li>
       </ul>
