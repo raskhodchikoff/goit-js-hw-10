@@ -19,12 +19,6 @@ refs.searchBox.addEventListener(
 function onInputCountry(e) {
   const countryName = e.target.value.trim();
 
-  // if (countryName === '') {
-  //   refs.countryInfo.innerHTML = '';
-  //   refs.countryList.innerHTML = '';
-  //   return;
-  // }
-
   if (countryName === '') {
     refs.countryInfo.innerHTML = '';
     refs.countryList.innerHTML = '';
